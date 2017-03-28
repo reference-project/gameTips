@@ -4,34 +4,39 @@
  * app.json中pages数组的第一项代表小程序的初始页
  * Page() 函数用来注册一个页面。接受一个 object 参数，其指定页面的初始数据、生命周期函数、事件处理函数等。
  * @description 游戏攻略社区首页
- * 
+ * @version 1.0.0
  */
 
 var app = getApp()    //获取应用实例
 
 Page({
+
   // 页面的初始数据
   data: {
     gameList: [{
       id: '1',
-      name: '式神猎手',
+      name: '式神搜索',
       icon: '../../static/images/tips1.png',
+      linkUrl: '../onmyouji/hellspawnSearch/hellspawnSearch',
       desc: '查找阴阳师中式神位置'
     }, {
       id: '2',
-      name: '式神属性查看',
+      name: '式神属性',
       icon: '../../static/images/tips2.png',
-      desc: '快速查找日常任务'
+      linkUrl: '',
+      desc: '查看式神攻击等信息(TODO)'
     }, {
       id: '3',
-      name: '御魂属性查看',
+      name: '御魂属性',
       icon: '../../static/images/tips3.png',
-      desc: '快速查找日常任务'
+      linkUrl: '',
+      desc: '查看对比御魂属性(TODO)'
     }, {
       id: '4',
-      name: '标题显示',
+      name: '标题待定(TODO)',
       icon: '../../static/images/tips4.png',
-      desc: '描述显示'
+      linkUrl: '',
+      desc: '描述待定(TODO)'
     }],
     userInfo: {}
   },

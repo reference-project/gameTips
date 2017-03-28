@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/hellspawnHunter",
+    "pages/onmyouji/hellspawnSearch/hellspawnSearch",
+    "pages/onmyouji/hellspawnSearch/hellspawnSiteDetail/hellspawnSiteDetail",
     "pages/logs/logs",
 
 
@@ -50,6 +51,5 @@
     "connectSocket": 10000,
     "uploadFile": 10000,
     "downloadFile": 10000
-  },
-  "debug": true
+  }
 }

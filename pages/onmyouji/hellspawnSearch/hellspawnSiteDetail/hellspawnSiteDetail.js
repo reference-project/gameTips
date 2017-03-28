@@ -1,4 +1,4 @@
-// pages/hellspawnHunter.js
+// pages/onmyouji/hellspawnSearch/hellspawnSiteDetail/hellspawnSiteDetail.js
 Page({
   data:{},
   onLoad:function(options){
