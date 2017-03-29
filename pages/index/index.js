@@ -33,10 +33,10 @@ Page({
       desc: '查看对比御魂属性(TODO)'
     }, {
       id: '4',
-      name: '标题待定(TODO)',
+      name: '薪资计算器',
       icon: '../../static/images/tips4.png',
-      linkUrl: '',
-      desc: '描述待定(TODO)'
+      linkUrl: '../salaryCalcutator/salaryCalcutator',
+      desc: '五险一金及税后工资计算'
     }],
     userInfo: {}
   },

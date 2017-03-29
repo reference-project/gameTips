@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/onmyouji/hellspawnSearch/hellspawnSearch",
     "pages/onmyouji/hellspawnSearch/hellspawnSiteDetail/hellspawnSiteDetail",
+    "pages/salaryCalcutator/salaryCalcutator",
     "pages/logs/logs",
 
 

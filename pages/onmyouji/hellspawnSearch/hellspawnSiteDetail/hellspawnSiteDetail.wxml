@@ -1,2 +1,52 @@
+
 <!--pages/onmyouji/hellspawnSearch/hellspawnSiteDetail/hellspawnSiteDetail.wxml-->
-<text>pages/onmyouji/hellspawnSearch/hellspawnSiteDetail/hellspawnSiteDetail.wxml</text>
+<template name="scene">
+  <view class="scene_item">
+    <view class="item_image">
+      <image src="{{icon}}" class="image_box"></image>
+    </view>
+    <view class="item_info">
+      <view class="item_title">{{ name }}
+        <text class="text_red">({{ hellspawn_info.name }} X {{ hellspawn_info.count }})</text>
+      </view>
+      <view class="item_desc">
+        <view class="item_text" wx:for="{{ team_list }}" wx:key="id">{{ item.name }}:
+          <text wx:for="{{ item.monsters }}" wx:key="id" wx:for-item="itm">
+            <text wx:if="{{ itm.name == hellspawn_info.name }}" style="color: #e53927;"> {{ itm.name }}X{{ itm.count }}</text>
+            <text wx:else> {{ itm.name }}X{{ itm.count }}</text>
+          </text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+
+<view class="detail_background">
+  <view class="hellspawn_part">
+    <view class="hellspawn_name">
+      <text class="name_txt">{{ hellspawn.name }}</text>
+      <image wx:if="{{hellspawn.rarity == 1}}" src="../../../../static/images/ssr.png" class="level_ssr"></image>
+      <image wx:elif="{{hellspawn.rarity == 2}}" src="../../../../static/images/sr.png" class="level_sr"></image>
+      <image wx:elif="{{hellspawn.rarity == 3}}" src="../../../../static/images/r.png" class="level_r"></image>
+      <image wx:elif="{{hellspawn.rarity == 4}}" src="../../../../static/images/n.png" class="level_n"></image>
+    </view>
+    <view class="hellspawn_pic">
+      <image src="{{ hellspawn.picture }}" class="pic"></image>
+    </view>
+  </view>
+</view>
+<view class="scenes">
+  <view class="scene_title">
+    <text>出没场景</text>
+  </view>
+  <view class="no_scene" wx:if="{{ !haveScene }}">
+    <text>暂无线索</text>
+  </view>
+  <block wx:for="{{ sceneList }}" wx:key="id">
+    <template is="scene" data="{{ ...item }}" />
+  </block>
+</view>
+<view class="footer">
+  <text>Copyright © 2017 serenitynight.com</text>
+</view>

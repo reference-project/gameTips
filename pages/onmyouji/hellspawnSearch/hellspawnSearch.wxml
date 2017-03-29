@@ -4,7 +4,7 @@
   <view class="hot">
     <text class="hot_title">热门搜索</text>
     <view class="hot_list">
-      <navigator url="../onmyoji/onmyoji?id={{item.id}}" wx:for="{{ popularList }}" wx:key="name" class="hot_item">{{ item.name }}</navigator>
+      <navigator url="./hellspawnSiteDetail/hellspawnSiteDetail?id={{item.id}}" wx:for="{{ popularList }}" wx:key="name" class="hot_item">{{ item.name }}</navigator>
     </view>
   </view>
   <view class="page__bd">
@@ -26,7 +26,7 @@
     </view>
     <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
       <block wx:for="{{hellspawnList}}" wx:key="id">
-        <navigator url="../onmyoji/onmyoji?id={{ item.id }}" class="weui-cell" hover-class="weui-cell_active">
+        <navigator url="./hellspawnSiteDetail/hellspawnSiteDetail?id={{ item.id }}" class="weui-cell" hover-class="weui-cell_active">
           <view class="weui-cell__hd">
             <image src="{{item.icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
           </view>
