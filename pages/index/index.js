@@ -23,8 +23,8 @@ Page({
       id: '2',
       name: '式神属性',
       icon: '../../static/images/tips2.png',
-      linkUrl: '',
-      desc: '查看式神攻击等信息(TODO)'
+      linkUrl: '../onmyouji/hellspawnAttributes/hellspawnAttributes',
+      desc: '查看式神攻击等信息'
     }, {
       id: '3',
       name: '御魂属性',
@@ -37,6 +37,12 @@ Page({
       icon: '../../static/images/tips4.png',
       linkUrl: '../salaryCalcutator/salaryCalcutator',
       desc: '五险一金及税后工资计算'
+    }, {
+      id: '5',
+      name: '我的音乐',
+      icon: '../../static/images/tips5.png',
+      linkUrl: '../myMusic/myMusic',
+      desc: '随便听点儿音乐'
     }],
     userInfo: {}
   },
@@ -58,22 +64,22 @@ Page({
 
   // 监听页面初次渲染完成, 一个页面只会调用一次，代表页面已经准备妥当，可以和视图层进行交互。
   onReady: function () {
-    console.log('onReady', '页面初次渲染完成');
+    //console.log('onReady', '页面初次渲染完成');
   },
 
   // 监听页面显示
   onShow: function () {
-    console.log('onShow', '页面显示');
+    //console.log('onShow', '页面显示');
   },
 
   // 监听页面卸载
   onUnload: function () {
-    console.log('onUnload', '页面卸载');
+    //console.log('onUnload', '页面卸载');
   },
 
   // 监听页面隐藏
   onHide: function () {
-    console.log('onHide', '页面隐藏');
+    //console.log('onHide', '页面隐藏');
   },
 
   //================================ 生命周期函数 END ===============================//

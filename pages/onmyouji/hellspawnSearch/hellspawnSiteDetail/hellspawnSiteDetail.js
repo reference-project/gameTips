@@ -7,7 +7,7 @@
  * 
  */
 
-var http = require("../../../../utils/http.js");
+var http = require("../../../../utils/onmyojiAPI.js");
 
 Page({
 
